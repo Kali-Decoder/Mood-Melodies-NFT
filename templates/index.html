@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Moodi-Fyy: Music for Everyone</title>
+    <link
+      rel="shortcut icon"
+      type="image/png"
+      href="{{ url_for('static', filename='favicon.ico') }}"
+    />
+    <link rel=stylesheet type=text/css href="{{ url_for('static',
+    filename='css/trail.css') }}">
+    <link
+      href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Roboto&family=Varela+Round&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      rel="stylesheet"
+      href="https://kit.fontawesome.com/9d4aef4753.css"
+      crossorigin="anonymous"
+    />
+    <script
+      src="https://kit.fontawesome.com/9d4aef4753.js"
+      crossorigin="anonymous"
+    ></script>
+
+    <link rel="stylesheet" href="../static/css/index.css" />
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="https://cdn.tailwindcss.com"></script>
+  </head>
+
+  <body>
+    <div class="sidebar">
+      <div class="navigation">
+        <ul><?>
+        <form action="#" method="post" enctype="multipart/form-data">
+          <div id="uploadArea" class="upload-area p-2">
+            <!-- Header -->
+            <div class="upload-area__header p-5">
+              <p class="upload-area__paragraph">
+                <strong class="upload-area__tooltip">
+                  Upload Your Image To Recognize your Mood Or NFT's
+                  <span class="upload-area__tooltip-data"></span>
+                  <!-- Data Will be Comes From Js -->
+                </strong>
+              </p>
+            </div>
+            <!-- End Header -->
+
+            <!-- Drop Zoon -->
+            <div id="dropZoon" class="upload-area__drop-zoon drop-zoon">
+              <span class="drop-zoon__icon">
+                <i class="bx bxs-file-image"></i>
+              </span>
+              <p class="drop-zoon__paragraph p-6">Drop your Image here</p>
+              <span id="loadingText" class="drop-zoon__loading-text"
+                >Please Wait</span
+              >
+              <img
+                src=""
+                alt="Preview Image"
+                id="previewImage"
+                class="drop-zoon__preview-image"
+                draggable="false"
+              />
+              <input
+                type="file"
+                id="fileInput"
+                class="drop-zoon__file-input"
+                name="file"
+                accept="image/*"
+              />
+            </div>
+            <!-- End Drop Zoon -->
+
+            <!-- File Details -->
+            <div
+              id="fileDetails"
+              class="upload-area__file-details file-details"
+            >
+              <h3 class="file-details__title">Uploaded File</h3>
+
+              <div id="uploadedFile" class="uploaded-file">
+                <div class="uploaded-file__icon-container">
+                  <i class="bx bxs-file-blank uploaded-file__icon"></i>
+                  <span class="uploaded-file__icon-text"></span>
+                  <!-- Data Will be Comes From Js -->
+                </div>
+
+                <div id="uploadedFileInfo" class="uploaded-file__info">
+                  <span class="uploaded-file__name">Proejct 1</span>
+                  <span class="uploaded-file__counter">0%</span>
+                </div>
+              </div>
+            </div>
+            <!-- End File Details -->
+          </div>
+          <button
+            type="submit"
+            class="mt-4 bg-green-500 hover:bg-green-700 text-white font-bold py-2 px-4 rounded"
+          >
+            Submit
+          </button>
+        </form>
+    </li></ul>
+      </div>
+    </div>
+  </body>
+  <script src="../static/js/index.js"></script>
+</html>

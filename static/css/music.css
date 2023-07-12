@@ -1,0 +1,23 @@
+
+body{
+  background-color: #121212 !important;
+  font-family: 'Montserrat', sans-serif !important;
+  font-size: 20px;
+}
+  
+  .player {
+    margin: auto;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+  }
+
+.heading-secondary {
+  background-image: linear-gradient(to right, #7ed56f, #28b485);
+  color: transparent;
+  -webkit-background-clip: text;
+  text-transform: uppercase;
+  transition: all 0.2s;
+}
+
+
